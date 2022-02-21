@@ -1,0 +1,59 @@
+.div1, .div2, .div3{
+	font-size: 23px;
+	font-family: 'Poppins';
+	color: white;
+	margin-right: 33%;
+	margin-left: -10px;
+	margin-top: -25px;
+	padding: 30px;
+	border-right: solid white 4px;
+}
+.div1{
+	padding-bottom: 188px;
+}
+.div2{
+	padding-bottom: 194px;
+}
+.div3{
+	padding-bottom: 214px;
+}
+.rightbar{ 
+	position: absolute;
+	left: 1272px;
+	top: 0px;
+}
+h1{ 
+	position: sticky;
+	top: 0px;
+	background-color: #202020;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+.link{
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins';
+	font-size: 26px;
+	left: 1050px;
+	top: 35px;
+	border: 2px solid;
+	border-radius: 30px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.link:hover{ 
+	color: #202020;
+	background-color: white;
+}
+.legend{
+	color: white;
+	font-family: 'Poppins';
+	padding-left: 10px;
+	font-size: 15px;
+	font-style: italic;
+}
+body{
+	background-color: #202020;
+}

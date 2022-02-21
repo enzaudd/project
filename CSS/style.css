@@ -1,0 +1,79 @@
+body{
+    background-color: #FFFFFB;
+    font-family: 'Poppins';
+}
+h1{
+    text-align: center;
+    padding-bottom: 1px;
+    border-bottom: solid 2px black;
+}
+.imga, .imgm, .imgf{
+    position: relative;
+    filter: blur(5px);
+    box-sizing: content-box;
+    margin-left: 0px;
+    z-index: 1;
+}
+.titrea, .titrem, .titref{
+    position: absolute;
+    left: 5%;
+    font-size: 70px;
+    color: white;
+    user-select: none;
+    text-shadow: 2px 1px 3px black;
+    z-index: 2;
+    text-decoration: none;
+}
+.titrea:hover, .titrem:hover, .titref:hover{
+    text-decoration: underline 4px;
+}
+.titrea{
+    top: 170px;
+}
+.titrem{
+    top: 444px;
+}
+.titref{
+    top: 718px;
+}
+.boxa, .boxm, .boxf{
+    position: absolute;
+    z-index: 2;
+}
+.boxa:hover ~ .imga, .boxm:hover ~ .imgm, .boxf:hover ~ .imgf{
+    filter: blur(0px);
+    animation-name: slideout;
+    animation-duration: 4000ms;
+    animation-fill-mode: forwards;
+}
+/* ne sachant pas utiliser le js et ne voulant pas copier coller un code d'internet sans le comprendre j'ai décidié
+d'utiliser des 'triggerbox' pour jouer l'animation 'slideout' car quand je mets l'image directement en triggerbox,
+celle-ci revient à sa position initiale une fois le curseur dépasser*/
+.texta, .textm, .textf{
+    position: absolute;
+    left: 25%;
+    font-size: 28px;
+    user-select: auto;
+}
+.texta{
+    top: 10%;
+}
+.textm{
+    top: 39%;
+}
+.textf{
+    top: 69%;
+}
+.linka{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+@keyframes slideout{
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
